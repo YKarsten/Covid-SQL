@@ -29,6 +29,14 @@ In total the dataset holds 67 categories, so there is a lot of data to dig into.
 - [MySQL Community Server](https://dev.mysql.com/downloads/mysql/): [8.1 or above]
   - Description: The project relies on a MySQL database for data storage and retrieval.
 
+## Visualization
+
+Using a subset of SQL queries listed in [tableau_views](tableau-views.sql) I created a tableau dashboard:  
+
+![Tableau Dashboard](images/Covid_Dashboard.png)  
+
+An interactive version can be accessed via [public.tableau.com/](https://public.tableau.com/app/profile/yannik.karsten/viz/CovidDashboard_16972811581590/Dashboard1#1)
+
 
 ## SQL Queries
 
