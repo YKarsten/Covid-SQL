@@ -15,7 +15,7 @@ The project utilizes a comprehensive dataset from [ourworldindata.org](https://o
 
 Using a subset of SQL queries listed in [tableau_views](tableau-views.sql) I created a tableau dashboard:  
 
-![Tableau Dashboard](images/Covid_Dashboard.png)  
+![Tableau Dashboard - Visual Representation of COVID Data](images/Covid_Dashboard.png)  
 
 An interactive version can be accessed via [public.tableau.com/](https://public.tableau.com/app/profile/yannik.karsten/viz/CovidDashboard_16972811581590/Dashboard1#1)
 
