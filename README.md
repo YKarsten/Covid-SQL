@@ -2,34 +2,16 @@
 
 ## Project Overview
 
-This repository is part of my data-analysis portfolio and focuses on SQL.  
-I used an open source dataset from [ourworldindata.org](https://ourworldindata.org/covid-deaths) on covid-19. It is a well maintained, up to date dataset on all kinds of aspects related to covid-19.  
-Some of the columns I'll be working with in this project are:
-- Continent
-- Location
-- Date
-- Population
-- Number of people infected (per day/ in total)
-- Number of people that died (per day/ in total)
-- The fatality rate
-- Number of vaccinations (per day/ in total)
+This project is designed to showcase my SQL skills by leveraging a well-documented dataset with abundant data points, minimizing the need for initial data cleaning. It is designed to be lightweight and is expected to run smoothly on most modern systems.  
+The primary objectives are to:
 
-In total the dataset holds 67 categories, so there is a lot of data to dig into.
+1. MySQL Server Setup: Demonstrate the ability to set up a MySQL server and configure a database for efficient data storage and retrieval.
 
-## How to Use
-1. Download MySQL Community Server for your OS at [mysql.com](https://dev.mysql.com/downloads/mysql/).  
-2. Install mySQL Server and mySQL Shell.   
-3. Setup a local mySQL server (you can keep the default network options) and set a password for the root admin account.  
-4. Once installed open the mySQL command line client and login.  
-5. `create database covid;`
-6. Either continue in the command line client or use a different SQL editor, personally I use [popSQL](https://popsql.com/).
+2. Data Import: Showcase the process of importing data from a CSV file into MySQL tables, including essential data transformation steps.
 
+3. SQL Query Proficiency: Exhibit proficiency in writing diverse SQL queries for data analysis, allowing for meaningful insights to be extracted from the dataset.
 
-## Dependencies
-- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/): [8.1 or above]
-  - Description: The project relies on a MySQL database for data storage and retrieval.
-
-## Visualization
+The project utilizes a comprehensive dataset from [ourworldindata.org](https://ourworldindata.org/covid-deaths), focusing on COVID-19-related statistics. The dataset contains 67 data categories, offering ample opportunities to explore various SQL capabilities. The aim is to provide a comprehensive example of working with real-world data and showcasing SQL expertise, from data preparation to insightful analysis.  
 
 Using a subset of SQL queries listed in [tableau_views](tableau-views.sql) I created a tableau dashboard:  
 
@@ -37,6 +19,20 @@ Using a subset of SQL queries listed in [tableau_views](tableau-views.sql) I cre
 
 An interactive version can be accessed via [public.tableau.com/](https://public.tableau.com/app/profile/yannik.karsten/viz/CovidDashboard_16972811581590/Dashboard1#1)
 
+## How to Use
+
+### 1. MySQL Setup:
+1. Download MySQL Community Server for your preferred operating system (e.g., Windows, macOS, or Linux) from [mysql.com](https://dev.mysql.com/downloads/mysql/).  
+2. Install both MySQL Server and MySQL Shell.
+3. Set up a local MySQL server (you can keep the default network options) and establish a password for the root admin account.
+4. After installation, open the MySQL command-line client and log in.
+
+### 2. Database Creation:
+1. Create a MySQL database to hold the data: `CREATE DATABASE covid;`
+2. Continue using the command-line client or choose an alternative SQL editor. Personally, I use [popSQL](https://popsql.com/) because it not only stores a history of your queries but also allows you to explore the data using interactive visuals. This can be particularly helpful for visualizing and analyzing your SQL data effectively. 
+
+### 3. Data Import:
+Now, let's proceed to importing the dataset into the MySQL database.
 
 ## SQL Queries
 
@@ -331,8 +327,9 @@ FROM
     PercentPopulationVaccinated
 ```
 
+## Dependencies
+- [MySQL Community Server](https://dev.mysql.com/downloads/mysql/): [8.1 or above]
+  - Description: The project relies on a MySQL database for data storage and retrieval.
+
 ## License
-
-Specify the license for your project.
-
-
+This project is licensed under the MIT License - see the [LICENSE](license.txt) file for details.
